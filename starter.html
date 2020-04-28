@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starter</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+</head>
+<body>
+
+    <div id="container">
+        <div id="menu">
+            <slot v-for="itemTitle in themesContent">
+                <h4 v-html="'🥑️ '+itemTitle.title"></h4>
+                <ul>
+                    <li v-for="(itemTheme, i) in itemTitle.themes">
+                        <a
+                            class="menu-link"
+                            :id="itemTheme[0]"
+                            :href="'#'+itemTheme[0]"
+                            @click.prevent="buildContent(itemTheme[0])"
+                            v-html="itemTheme[1]"
+                        ></a>
+                    </li>
+                </ul>
+            </slot>
+        </div>
+
+        <div id="content"></div>
+    </div>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/basic.css">
+    
+	<!-- Libraries -->
+	<script src="src/libs/highlight/highlight.pack.js"></script>
+	<script src="src/libs/vue.js"></script>
+
+	<!-- Custom Elements -->
+	<script src="src/components-web/custom-elements.js"></script>
+	<link rel="stylesheet" href="src/components-web/custom-elements.css">
+
+	<!-- Vue.js Components -->
+	<script src="src/components-vue/vue-components.js"></script>
+	<link rel="stylesheet" href="src/components-vue/vue-components.css">
+	
+	<!-- JavaScript -->
+    <script src="src/js/basic.js"></script>
+
+    <script src="pages/build-starter.js"></script>
+    <script src="src/js/build.js"></script>
+</body>
+</html>

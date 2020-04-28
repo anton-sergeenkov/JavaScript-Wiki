@@ -1,0 +1,48 @@
+<h2>Настройка</h2>
+
+<v-code lang="bash" title="">
++ <em>img</em>          # директория с изображениями к темам
++ <em>pages</em>        # директория с темами
++ <em>src</em>          # директория с макетом
+- <em>starter.html</em> # файл для каждого раздела
+</v-code>
+
+<!------------------------------------------------------------->
+<h4>Путь к изображениям</h4>
+<!------------------------------------------------------------->
+<v-code lang="html" title="">
+&lt;img src="/img/НазваниеРаздела/НазваниеТемы/Изображение.jpg"&gt;
+</v-code>
+
+<!------------------------------------------------------------->
+<h4>starter.html</h4>
+<!------------------------------------------------------------->
+<ul class="list-point">
+    <li>Подключение скрипта <u-code-text>build-starter.js</u-code-text></li>
+</ul>
+
+<v-code lang="html" title="">
+&lt;body&gt;
+    &lt;script src="src/js/basic.js"&gt;&lt;/script&gt;
+	<u-code-wrapper>
+    &lt;script src="pages/build-starter.js"&gt;&lt;/script&gt;
+	</u-code-wrapper>
+    &lt;script src="src/js/build.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+</v-code>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<h3>Компоненты Vue</h3>
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<v-two><template v-slot:first>
+<v-code lang="html" title="">
+&lt;v-details title="Show Content"&gt;
+Hidden Content
+&lt;/v-details&gt;
+</v-code>
+</template><template v-slot:last>
+<v-details title="Show Content">
+Hidden Content
+</v-details>
+</template></v-two>
+
