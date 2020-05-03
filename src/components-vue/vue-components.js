@@ -118,7 +118,7 @@ Vue.component('v-details', {
 	props: ['title'],
     template: `
 		<details>
-			<summary v-text="title"></summary>
+			<summary v-html="title"></summary>
 			<slot></slot>
 		</details>
 	`,
