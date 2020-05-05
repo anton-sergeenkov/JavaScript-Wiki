@@ -127,7 +127,7 @@ u-link-wrapper a:before {
 	width: 16px;
 	height: 16px;
 	margin: 0px 7px;
-	background-image: url(../img/link.svg);
+	background-image: url(img/link.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;

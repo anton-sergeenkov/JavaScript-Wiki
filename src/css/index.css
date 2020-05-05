@@ -20,6 +20,7 @@
 	overflow: auto;
 	flex-shrink: 0;
 	min-width: 250px;
+	max-width: 300px;
 }
 
 /***************************************************
@@ -48,6 +49,8 @@ MENU
     line-height: 1;
     border: 2px solid transparent;
     padding: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #menu a:hover {
 	transition: 0.2s;
