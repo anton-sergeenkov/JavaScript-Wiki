@@ -1,6 +1,4 @@
 
-hljs.initHighlightingOnLoad();
-
 const emoji = {
     theory:    '📑 ',
     code:      '⚡️ ',
