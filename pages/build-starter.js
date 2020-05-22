@@ -4,7 +4,9 @@ const ARR_MODULE = [
     {
         title: 'Установка',
         themes: [
-            ['install/settings',  'Настройка'],
+            ['main/settings',  'Настройка'],
+            ['main/components-vue',  'Vue Components'],
+            ['main/components-web',  'Web Components'],
         ],
     },
 ];
