@@ -7,6 +7,7 @@ const ARR_MODULE = [
             ['main/settings',         'Настройка'],
             ['main/custom-elements',  'Custom Elements'],
             ['main/snippets',         'Сниппеты'],
+            ['main/markers',          'Маркеры'],
         ]
     },
     {
