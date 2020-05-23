@@ -5,9 +5,18 @@ const ARR_MODULE = [
         title: 'Основное',
         themes: [
             ['main/settings',         'Настройка'],
-            ['main/custom-elements',  'Custom Elements'],
             ['main/snippets',         'Сниппеты'],
             ['main/markers',          'Маркеры'],
+        ]
+    },
+    {
+    	title: 'Custom Elements',
+        themes: [
+            ['custom-elements/labels',   'Метки'],
+            ['custom-elements/code',     'Код'],
+            ['custom-elements/links',    'Ссылки'],
+            ['custom-elements/blocks',   'Блоки'],
+            ['custom-elements/alert',    'Сообщения'],
         ]
     },
     {
@@ -24,5 +33,11 @@ const ARR_MODULE = [
             ['vue-components/v-details',   setTheme(1, ['v-details'])],
             ['vue-components/v-iframe',    setTheme(1, ['v-iframe'])],
         ]
-    }
+    },
+    {
+    	title: 'Class',
+        themes: [
+            ['class/links',   'Ссылки на разделы'],
+        ]
+    },
 ];
