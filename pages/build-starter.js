@@ -6,7 +6,7 @@ const ARR_MODULE = [
         themes: [
             ['main/settings',         'Настройка'],
             ['main/snippets',         'Сниппеты'],
-            ['main/markers',          'Маркеры'],
+            ['main/symbols',          'Символы'],
         ]
     },
     {
