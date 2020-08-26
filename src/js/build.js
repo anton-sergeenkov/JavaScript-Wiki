@@ -3,6 +3,7 @@ new Vue({
     el: '#container',
     data: {
         themesContent: null,
+        linksContent: null
     },
     methods: {
         buildContent(file) {
@@ -29,5 +30,6 @@ new Vue({
     },
     mounted() {
         this.themesContent = ARR_MODULE;
+        this.linksContent = ARR_LINKS;
     },
 });
