@@ -32,4 +32,10 @@ new Vue({
         this.themesContent = ARR_MODULE;
         this.linksContent = ARR_LINKS;
     },
+    created() {
+        const hashPage = location.hash.slice(1);
+        this.buildContent(hashPage);
+	},
 });
+
+
