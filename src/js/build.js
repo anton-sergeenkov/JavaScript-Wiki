@@ -34,6 +34,7 @@ new Vue({
     },
     created() {
         const hashPage = location.hash.slice(1);
+        console.log('hashPage', hashPage);
         this.buildContent(hashPage);
 	},
 });
