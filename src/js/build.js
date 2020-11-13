@@ -3,7 +3,8 @@ new Vue({
     el: '#container',
     data: {
         themesContent: null,
-        linksContent: null
+        linksContent: null,
+        themesEmoji: '🥥'
     },
     methods: {
         buildContent(file) {

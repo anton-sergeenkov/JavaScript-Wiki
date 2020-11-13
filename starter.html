@@ -14,7 +14,7 @@
     <div id="container">
         <div id="menu">
             <slot v-for="itemTitle in themesContent">
-                <h4 v-html="'🥑️ '+itemTitle.title"></h4>
+                <h4 v-html="themesEmoji+' '+itemTitle.title"></h4>
                 <ul>
                     <li v-for="(itemTheme, i) in itemTitle.themes">
                         <a
