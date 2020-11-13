@@ -38,4 +38,3 @@ new Vue({
         hashPage && this.buildContent(hashPage);
 	},
 });
-

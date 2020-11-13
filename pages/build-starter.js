@@ -40,4 +40,19 @@ const ARR_MODULE = [
             ['class/links',   'Ссылки на разделы'],
         ]
     },
+
+    // {
+    //     title: 'Test',
+    //     themes: [
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //         ['test',   'Test'],
+    //     ]
+    // },
 ];
