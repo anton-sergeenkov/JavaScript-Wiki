@@ -13,6 +13,13 @@
 
     <div id="container">
         <div id="menu">
+            <div id="top">
+                <a href="#links" class="link">
+                    <img class="img" src="src/img/show.svg" />
+                    <span>Starter</span>
+                </a>
+            </div>
+
             <slot v-for="itemTitle in themesContent">
                 <h4 v-html="themesEmoji+' '+itemTitle.title"></h4>
                 <ul>
