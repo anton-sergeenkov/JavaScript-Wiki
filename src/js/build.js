@@ -13,10 +13,10 @@ new Vue({
             fetch(path)
                 .then(res => res.text())
                 .then(body => {
-                    const MyComponent = Vue.extend({
+                    const Component = Vue.extend({
                         template: `<div>${body}</div>`
                     });
-                    const component = new MyComponent().$mount();
+                    const component = new Component().$mount();
                     const wrapper = document.getElementById('content');
                     wrapper.innerHTML = '';
                     wrapper.appendChild(component.$el);
