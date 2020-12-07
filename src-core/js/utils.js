@@ -14,6 +14,7 @@ const emoji = {
     avocado:   '🥑 ',
     coconut:   '🥥 ',
     favorite:  '⭐️ ',
+    chevron:   '🔰 ',
 }
 
 function setTheme(tag, arr) {
