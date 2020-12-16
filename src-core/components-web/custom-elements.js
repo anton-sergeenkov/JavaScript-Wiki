@@ -7,8 +7,8 @@ const arrCustomElements = [
 	// menu
 	'u-menu', 'u-menu-accent', 'u-menu-code', 'u-menu-border', 'u-menu-unactive',
 	// code
-	'u-code', 'u-code-npm', 'u-code-accent', 'u-code-text', 'u-code-list', 'u-code-comment',
-	'u-code-wrapper',
+	'u-code', 'u-code-npm', 'u-code-accent', 'u-code-text', 'u-code-flat', 'u-code-list',
+	'u-code-comment', 'u-code-wrapper',
 	// link
 	'u-link-wrapper',
 	// message

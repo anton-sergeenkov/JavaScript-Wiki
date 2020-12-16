@@ -1,8 +1,8 @@
 /*******************************************
 all
 *******************************************/
-u-code-text, u-code-list, u-code-comment, u-code, u-text-define, u-text-header,
-u-code-wrapper, u-link-wrapper, u-code-npm, u-code-title, u-code-accent,
+u-code-text, u-code-flat, u-code-list, u-code-comment, u-code, u-text-define,
+u-text-header, u-code-wrapper, u-link-wrapper, u-code-npm, u-code-title, u-code-accent,
 u-menu, u-menu-accent, u-menu-code, u-menu-border, u-text-underline, u-text-accent,
 u-block-left-padding  {
 	margin: 0;
@@ -29,6 +29,13 @@ u-code-text {
 	color: #e96900;
 	padding: 2px 5px;
 	background: rgba(var(--color-other),0.2);
+	font-size: 14px;
+}
+u-code-flat {
+	font-family: monospace;
+	line-height: 1.5em;
+	color: rgba(var(--color-js), 1);
+	padding: 2px 5px;
 	font-size: 14px;
 }
 u-code-list {
