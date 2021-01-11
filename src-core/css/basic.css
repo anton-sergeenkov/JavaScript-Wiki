@@ -2,11 +2,12 @@
 @import "../libs/highlight/sawyer.css" screen;
 
 :root {
-	--color-html:        74, 175, 45;    /*green*/
-	--color-js:          11, 168, 160;   /*blue*/
-	--color-php:         191, 122, 190;  /*crimson*/
-	--color-other:       179, 183, 104;  /*brown*/
-	--color-fw:          71, 7, 183;     /*violet*/
+	--theme-green:       74, 175, 45;
+	--theme-blue:        11, 168, 160;
+	--theme-crimson:     191, 122, 190;
+	--theme-brown:       179, 183, 104;
+	--theme-violet:      71, 7, 183;
+
 	--color-error:       226, 131, 174;  /*dark pink*/
 	--color-black:       0, 0, 0;        /*black*/
 	--color-dark-green:  42, 61, 47;     /*dark green*/
@@ -31,7 +32,7 @@ body {
     box-sizing: border-box;
 }
 *::selection {
-	background: rgba(var(--color-js), 0.4);
+	background: rgba(var(--theme-blue), 0.4);
 }
 
 /***************************************************
@@ -75,12 +76,12 @@ code {
     position: relative;
 }
 code.border {
-	border: 2px solid rgba(var(--color-js), 0.45);
-	background: rgba(var(--color-js), 0.1) !important;
+	border: 2px solid rgba(var(--theme-blue), 0.45);
+	background: rgba(var(--theme-blue), 0.1) !important;
 }
 code.none {
 	background: none;
-	border: 1px solid rgba(var(--color-other), 0.2);
+	border: 1px solid rgba(var(--theme-brown), 0.2);
 }
 pre a {
 	color: black;
