@@ -39,9 +39,12 @@
         <div id="wrapper">
             <div id="links">
                 <ul>
-                    <li v-for="itemLink in linksContent">
-                        <a :href="itemLink.href" v-html="'⚡️ '+itemLink.title"></a>
-                    </li>
+                    <slot v-for="itemLink in linksContent">
+                        <li v-if="itemLink">
+                            <a :href="itemLink.page" v-html="itemLink.title"></a>
+                        </li>
+                        <li v-else class="splitter"></li>
+                    </slot>
                 </ul>
             </div>
             <div id="content"></div>

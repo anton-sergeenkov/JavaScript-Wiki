@@ -103,6 +103,10 @@ LINKS
     transition: opacity 0.7s;
     cursor: pointer;
 }
+#links .splitter {
+	width: 100%;
+	flex-shrink: 0;
+}
 
 /***************************************************
 TOP
