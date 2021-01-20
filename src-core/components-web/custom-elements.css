@@ -19,7 +19,7 @@ elements
 *******************************************/
 u-code {
 	background: rgba(var(--theme-violet), 0.2);
-	padding: 2px;
+	padding: 1.2px 2px;
 	border-radius: 3px;
 }
 u-code-text {
@@ -28,7 +28,7 @@ u-code-text {
 	line-height: 1.5em;
 	color: #e96900;
 	padding: 2px 5px;
-	background: rgba(var(--theme-brown),0.2);
+	background: rgba(var(--theme-brown), 0.2);
 	font-size: 14px;
 }
 u-code-flat {
