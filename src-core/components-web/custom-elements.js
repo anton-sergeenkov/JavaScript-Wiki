@@ -16,7 +16,7 @@ const arrCustomElements = [
 	// используется в "v-code" и с "u-code-wrapper"
 	'u-code-title', 
 	// blocks
-	'u-block-left-padding',
+	'u-block-left-padding', 'u-block-code',
 ];
 
 arrCustomElements.forEach(function(element) {

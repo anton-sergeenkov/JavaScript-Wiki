@@ -4,13 +4,13 @@ all
 u-code-text, u-code-flat, u-code-list, u-code-comment, u-code, u-text-define,
 u-text-header, u-code-wrapper, u-link-wrapper, u-code-npm, u-code-title, u-code-accent,
 u-menu, u-menu-accent, u-menu-code, u-menu-border, u-text-underline, u-text-accent,
-u-block-left-padding  {
+u-block-left-padding, u-block-code  {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	display: inline;
 }
-u-code-wrapper, u-link-wrapper, u-block-left-padding {
+u-code-wrapper, u-link-wrapper, u-block-left-padding, u-block-code {
 	display: block;
 }
 
@@ -80,6 +80,14 @@ blocks
 *******************************************/
 u-block-left-padding {
 	padding-left: 50px;
+}
+u-block-code {
+	padding: 10px 20px;
+	font-family: monospace;
+	white-space: pre;
+	tab-size: 4;
+	border-radius: 3px;
+	box-shadow: var(--box-shadow);
 }
 
 /*******************************************
