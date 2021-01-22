@@ -82,12 +82,14 @@ u-block-left-padding {
 	padding-left: 50px;
 }
 u-block-code {
+	margin: 10px 0;
 	padding: 10px 20px;
+	border: 1px solid #f5f5f5;
+	border-radius: 3px;
 	font-family: monospace;
 	white-space: pre;
 	tab-size: 4;
-	border-radius: 3px;
-	box-shadow: var(--box-shadow);
+	background-color: #fcfcfc;
 }
 
 /*******************************************
