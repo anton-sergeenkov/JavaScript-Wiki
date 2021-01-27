@@ -13,7 +13,7 @@ u-block-left-padding, u-block-code  {
 u-code-wrapper, u-link-wrapper, u-block-left-padding, u-block-code {
 	display: block;
 }
-u-code, u-code-text {
+u-code, u-code-text, u-code-flat {
 	display: inline-block;
 }
 
