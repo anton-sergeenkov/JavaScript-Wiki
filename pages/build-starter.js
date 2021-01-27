@@ -12,11 +12,12 @@ const ARR_MODULE = [
     {
     	title: 'Custom Elements',
         themes: [
-            ['custom-elements/labels',   'Метки'],
-            ['custom-elements/code',     'Код'],
-            ['custom-elements/links',    'Ссылки'],
-            ['custom-elements/blocks',   'Блоки'],
-            ['custom-elements/alert',    'Сообщения'],
+            ['custom-elements/labels',    emoji.chevron+'Метки'],
+            ['custom-elements/code',      emoji.chevron+'Код'],
+            ['custom-elements/links',     emoji.chevron+'Ссылки'],
+            ['custom-elements/blocks',    emoji.chevron+'Блоки'],
+            ['custom-elements/alert',     emoji.chevron+'Сообщения'],
+            ['custom-elements/clipboard', emoji.chevron+'Clipboard'],
         ]
     },
     {

@@ -17,6 +17,8 @@ const arrCustomElements = [
 	'u-code-title', 
 	// blocks
 	'u-block-left-padding', 'u-block-code',
+	// other
+	'u-clipboard',
 ];
 
 arrCustomElements.forEach(function(element) {

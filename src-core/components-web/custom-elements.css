@@ -4,7 +4,7 @@ all
 u-code-text, u-code-flat, u-code-list, u-code-comment, u-code, u-text-define,
 u-text-header, u-code-wrapper, u-link-wrapper, u-code-npm, u-code-title, u-code-accent,
 u-menu, u-menu-accent, u-menu-code, u-menu-border, u-text-underline, u-text-accent,
-u-block-left-padding, u-block-code  {
+u-block-left-padding, u-block-code, u-clipboard {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -77,6 +77,15 @@ u-text-accent {
 	font-weight: 500;
 	color: #6241ea;
 }
+u-clipboard {
+	cursor: pointer;
+	transition: 0.4s;
+}
+u-clipboard:hover {
+	box-shadow:
+	    0 0 0 2px #fff,
+	    0 0 0 4px rgba(var(--theme-blue), 1);
+}
 
 /*******************************************
 blocks
@@ -93,6 +102,7 @@ u-block-code {
 	white-space: pre;
 	tab-size: 4;
 	background-color: #fcfcfc;
+	color: #fcfcfc;
 }
 
 /*******************************************

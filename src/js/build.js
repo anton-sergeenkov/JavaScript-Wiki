@@ -23,6 +23,7 @@ new Vue({
 
                     setHighlightCode();
                     setActiveLink(file);
+                    setClipboard();
                 })
         },
     },

@@ -51,3 +51,32 @@ function setActiveLink(file) {
     const currentLink = document.getElementById(file+'link');
     currentLink.classList.add('menu-link-active');
 }
+
+//----------------------------------------
+// Clipboard
+//----------------------------------------
+function setClipboard() {
+    const clipboardElements = document.querySelectorAll('u-clipboard');
+
+    clipboardElements.forEach(element => {
+        element.addEventListener('click', (e) => {
+            copyToClipboard(e.target);
+        })
+    })    
+}
+
+// Clear current selection
+function clearClipboard() {
+    window.getSelection().removeAllRanges();
+}
+
+function copyToClipboard(element) {
+    let range = document.createRange();
+    range.selectNode(element);
+
+    clearClipboard();
+    // To select text
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    clearClipboard();
+}
