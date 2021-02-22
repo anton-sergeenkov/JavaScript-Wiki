@@ -1,8 +1,8 @@
 
 const ARR_LINKS = [
-    { page: 'starter',        theme: 'green', title: '🔰 Starter' },
+    { page: 'starter', theme: 'green', title: '🔰 Starter' },
     null,
-    { page: 'https://ya.ru/', theme: 'brown', title: '🥑 Yandex' },
+    { page: 'test',    theme: 'brown', title: '🥑 Test' },
 ];
 
 // THEME: green, blue, crimson, brown, violet
