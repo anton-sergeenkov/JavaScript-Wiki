@@ -2,8 +2,8 @@ const nodeEval = require('node-eval');
 const fs = require('fs');
 const rimraf = require('rimraf');
 
-nodeEval(fs.readFileSync('../src-core/js/utils.js', 'utf8'));
-nodeEval(fs.readFileSync('../pages/build-starter.js', 'utf8'));
+nodeEval(fs.readFileSync('src-core/js/utils.js', 'utf8'));
+nodeEval(fs.readFileSync('pages/build-starter.js', 'utf8'));
 
 let html = '';
 let menu = '';
@@ -25,7 +25,7 @@ ARR_MODULE.forEach(({ title, themes }) => {
     menu += '<ul>';
 
     themes.forEach(elements => {
-        const file = `../pages/${PATH_MODULE}/${elements[0]}.html`;
+        const file = `pages/${PATH_MODULE}/${elements[0]}.html`;
         const content = fs.readFileSync(file, 'utf8');
         const id = `${title}__${elements[1]}`;
 
@@ -36,7 +36,7 @@ ARR_MODULE.forEach(({ title, themes }) => {
     menu += '</ul>';
 })
 
-const PATH_PAGES = '../build';
+const PATH_PAGES = 'build';
 
 rimraf.sync(PATH_PAGES);
 
@@ -45,7 +45,7 @@ if (!fs.existsSync(PATH_PAGES)) {
 }
 
 
-import { getIndexHTML } from './html/index';
+import { getIndexHTML } from './html-page';
 
 const page = getIndexHTML({
     up: '../',
