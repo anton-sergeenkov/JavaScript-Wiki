@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-import { getIndexHTML } from './html-page';
+import { getIndexHTML } from './html/html-page';
 
 const page = getIndexHTML({
     up: '',
