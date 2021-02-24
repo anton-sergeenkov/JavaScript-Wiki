@@ -1,4 +1,6 @@
 
+// THEME: green, blue, crimson, brown, violet
+
 const ARR_LINKS = [
     { page: 'assessment',              theme: 'brown',    title: 'Ассессмент' },
     // { page: 'js-tasks',                theme: 'brown',    title: '🍕 Задачи' },
@@ -25,9 +27,9 @@ const ARR_LINKS = [
     // { page: 'redux',                   theme: 'violet',   title: '🍋 Redux' },
     // { page: 'react-router',            theme: 'violet',   title: 'React Router' },
     // null,
-    // { page: 'prop-types',              theme: 'violet',   title: 'PropTypes' },
-    // { page: 'formik',                  theme: 'violet',   title: 'Formik' },
-    // { page: 'reselect',                theme: 'violet',   title: 'Reselect' },
+    { page: 'prop-types',              theme: 'violet',   title: 'PropTypes' },
+    { page: 'formik',                  theme: 'violet',   title: 'Formik' },
+    { page: 'reselect',                theme: 'violet',   title: 'Reselect' },
     // { page: 'material-ui',             theme: 'violet',   title: 'Material-UI & JSS' },
     // { page: 'vue-js',                  theme: 'violet',   title: 'Vue.js' },
     // null,
@@ -61,5 +63,3 @@ const ARR_LINKS = [
     // { page: 'linux',                   theme: 'brown',    title: 'Linux' },
     // { page: 'jquery',                  theme: 'brown',    title: 'jQuery' },
 ];
-
-// THEME: green, blue, crimson, brown, violet

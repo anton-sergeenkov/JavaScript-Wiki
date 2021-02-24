@@ -13,7 +13,7 @@ nodeEval(fs.readFileSync('./__modules__/__links__.js', 'utf8'));
 ARR_LINKS.forEach(module => {
     const page = getIndexHTML({
         up: '../',
-        title: module.page,
+        title: module.title,
         script: module.page,
         menu: null,
         content: null,
