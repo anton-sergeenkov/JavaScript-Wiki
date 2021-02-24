@@ -1,6 +1,6 @@
-const PATH_MODULE = 'starter';
+PATH_MODULE = 'starter';
 
-const ARR_MODULE = [
+ARR_MODULE = [
     {
         title: 'Основное',
         themes: [

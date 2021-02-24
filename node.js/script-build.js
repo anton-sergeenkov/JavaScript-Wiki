@@ -9,19 +9,16 @@ const PATH_PAGES = 'build';
 
 createDir(PATH_PAGES);
 
+MODULES.forEach(module => {
+    const { html, menu } = getThemesHTML(module);
 
-
-
-const path = MODULES[0];
-
-const { html, menu } = getThemesHTML(path);
-
-const page = getIndexHTML({
-    up: '../',
-    title: path,
-    script: path,
-    menu,
-    content: html,
-});
-
-fs.writeFileSync(`${PATH_PAGES}/${path}.html`, page);
+    const page = getIndexHTML({
+        up: '../',
+        title: module,
+        script: module,
+        menu,
+        content: html,
+    });
+    
+    fs.writeFileSync(`${PATH_PAGES}/${module}.html`, page);
+})
