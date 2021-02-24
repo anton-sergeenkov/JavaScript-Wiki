@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dev Commit</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="src/img/favicon.png">
+</head>
+<body>
+
+    <div id="container">
+        <div id="wrapper">
+            <button @click="switchPage('pages')">PAGE</button>
+            <button @click="switchPage('build')">BUILD</button>
+
+            <div id="links">
+                <ul>
+                    <slot v-for="itemLink in linksContent">
+                        <li v-if="itemLink">
+                            <a :href="page+'/'+itemLink.page" :class="'theme-'+itemLink.theme" v-html="itemLink.title"></a>
+                        </li>
+                        <li v-else class="splitter"></li>
+                    </slot>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="src-core/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+
+    <!-- Libraries -->
+    <script src="src-core/libs/vue.js"></script>
+
+    <!-- JavaScript -->
+    <script src="__modules__/links.js"></script>
+    <script>
+        new Vue({
+            el: '#container',
+            data: {
+                linksContent: ARR_LINKS,
+                page: 'pages'
+            },
+            methods: {
+                switchPage(page) {
+                    this.page = page;
+                },
+            }
+        });
+    </script>
+</body>
+</html>    

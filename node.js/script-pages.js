@@ -1,13 +1,21 @@
 const fs = require('fs');
 
+import { MODULES } from '../__modules__/index';
+import { createDir } from './utils/dir';
 import { getIndexHTML } from './html/html-page';
 
-const page = getIndexHTML({
-    up: '',
-    title: 'Starter',
-    script: 'starter',
-    menu: null,
-    content: null,
-});
+const PATH_PAGES = 'pages';
 
-fs.writeFileSync(`1.html`, page);
+createDir(PATH_PAGES);
+
+MODULES.forEach(module => {
+    const page = getIndexHTML({
+        up: '../',
+        title: module,
+        script: module,
+        menu: null,
+        content: null,
+    });
+    
+    fs.writeFileSync(`${PATH_PAGES}/${module}.html`, page);
+})
