@@ -23,11 +23,55 @@ ARR_MODULE = [
             ['js-class/main/return',             emoji.chevron+setTheme(4, ['return'])],
         ]
     },
+    {
+        title: 'Основы',
+        themes: [
+            ['js/main/bind',                     emoji.baseball+setTheme(1, ['bind', 'call', 'apply'])],
+            ['js/main/context',                  emoji.baseball+'Контекст'],
+            ['js/function/arrow',                emoji.favorite+'Стрелочные функции'],
+            ['js-async/theory/event-loop',       emoji.lemon+'Event Loop'],
+            ['js-async/theory/event-loop-tasks', emoji.lemon+'Event Loop: Tasks'],
+        ]
+    },
+    {
+        title: 'Замыкания',
+        themes: [
+            ['js/closures/closures',     emoji.theory+'Замыкания'],
+            ['js/closures/environment',  emoji.theory+'Области видимости'],
+            ['js/closures/funarg',       emoji.theory+'Фунарг-проблема'],
+        ]
+    },
+    {
+        title: 'Практика',
+        themes: [
+            ['js/main/array-cycle',        emoji.boom+setTheme(1, ['map', 'forEach', '...'])],
+            ['js/main/spread-array',       emoji.code+'Spread Arr (ES6)'],
+            ['js/main/spread-obj',         emoji.code+'Spread Obj (ES-2018)'],
+            ['js/main/destructive-array',  emoji.pizza+'Деструктуризация Arr (ES6)'],
+            ['js/main/destructive-obj',    emoji.pizza+'Деструктуризация Obj (ES6)'],
+            ['js-async/async/async-func',  emoji.boom+'Async Function (ES2017)'],
+        
+        ]
+    },
+    {
+        title: 'Оптимизация',
+        themes: [
+            ['theory/optimization/info',                     emoji.theory+'Оптимизация загрузки'],
+            ['theory/optimization/critical-rendering-path',  emoji.avocado+'Critical Rendering Path'],
+            ['theory/optimization/repaint-and-reflow',       emoji.avocado+'Repaint & Reflow'],
+            ['theory/optimization/caching',                  emoji.favorite+'Кэширование'],
+            ['theory/optimization/tree-shaking',             emoji.favorite+'Tree shaking'],
+        ]
+    },
+    {
+        title: 'Теория',
+        themes: [
+            ['theory-paradigms/oop/principles',      emoji.lemon+'ООП'],
+            ['theory-paradigms/fp/concept',          emoji.lemon+'ФП'],
+            ['theory/programming-principles/solid',  emoji.baseball+'SOLID'],
+            ['theory-patterns/main/info',            emoji.theory+'Паттерны'],
+            ['theory/application-architecture/mvc',  emoji.theory+'MVC'],
+            ['testing/theory/pyramid',               emoji.theory+'Пирамида тестирования'],
+        ]
+    },
 ];
-
-// {
-//     title: '',
-//     themes: [
-//         ['', ''],
-//     ]
-// },

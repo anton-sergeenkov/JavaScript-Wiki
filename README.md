@@ -13,4 +13,6 @@ npm run pages  # [node.js] build pages
 - none
 
 ## Todo
+- Добавить SUB-TITLE
+- Переписать на Parcel
 - Верхнее меню переделать под webnotes
