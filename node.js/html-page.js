@@ -26,7 +26,7 @@ export const getIndexHTML = ({ up, title, script, menu, content }) => (`
         
             <script src="${up}src-core/js/utils.js"></script>
             <!-- Own JavaScript -->
-            <script src="${up}pages/build-${script}.js"></script>
+            <script src="${up}__modules__/build-${script}.js"></script>
         </head>
         <body>
         
@@ -74,7 +74,7 @@ export const getIndexHTML = ({ up, title, script, menu, content }) => (`
         
             <!-- JavaScript -->
             <script src="${up}src-core/js/init.js"></script>
-            <script src="${up}pages/links.js"></script>
+            <script src="${up}__modules__/links.js"></script>
             <script src="${up}src/js/build.js"></script>
         </body>
     </html>    

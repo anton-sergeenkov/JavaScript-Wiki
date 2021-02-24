@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "pages": "node -r esm ./node.js/pages.js",
-        "build": "node -r esm ./node.js/build.js"
+        "pages": "node -r esm ./node.js/script-pages.js",
+        "build": "node -r esm ./node.js/script-build.js"
     },
     "dependencies": {
         "esm": "^3.2.25",

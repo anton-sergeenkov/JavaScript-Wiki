@@ -8,7 +8,7 @@ new Vue({
     },
     methods: {
         buildContent(file) {
-            const path = `pages/${PATH_MODULE}/${file}.html`;
+            const path = `__themes__/${PATH_MODULE}/${file}.html`;
 
             fetch(path)
                 .then(res => res.text())
