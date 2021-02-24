@@ -24,7 +24,7 @@ export const getIndexHTML = ({ up, title, script, menu, content }) => (`
             <meta charset="UTF-8">
             <link rel="icon" type="image/png" href="${up}src/img/favicon.png">
         
-            <script src="${up}src-core/js/utils.js"></script>
+            <script src="${up}src/js/utils.js"></script>
             <!-- Own JavaScript -->
             <script src="${up}__modules__/build-${script}.js"></script>
         </head>
@@ -57,25 +57,25 @@ export const getIndexHTML = ({ up, title, script, menu, content }) => (`
             </div>
         
             <!-- CSS -->
-            <link rel="stylesheet" type="text/css" href="${up}src-core/css/basic.css">
+            <link rel="stylesheet" type="text/css" href="${up}src/css/basic.css">
             <link rel="stylesheet" type="text/css" href="${up}src/css/index.css">
         
             <!-- Libraries -->
-            <script src="${up}src-core/libs/highlight/highlight.pack.js"></script>
-            <script src="${up}src-core/libs/vue.js"></script>
+            <script src="${up}src/libs/highlight/highlight.pack.js"></script>
+            <script src="${up}src/libs/vue.js"></script>
         
             <!-- Custom Elements -->
-            <script src="${up}src-core/components-web/custom-elements.js"></script>
-            <link rel="stylesheet" type="text/css" href="${up}src-core/components-web/custom-elements.css">
+            <script src="${up}src/components-web/custom-elements.js"></script>
+            <link rel="stylesheet" type="text/css" href="${up}src/components-web/custom-elements.css">
         
             <!-- Vue.js Components -->
-            <script src="${up}src-core/components-vue/vue-components.js"></script>
-            <link rel="stylesheet" type="text/css" href="${up}src-core/components-vue/vue-components.css">
+            <script src="${up}src/components-vue/vue-components.js"></script>
+            <link rel="stylesheet" type="text/css" href="${up}src/components-vue/vue-components.css">
         
             <!-- JavaScript -->
-            <script src="${up}src-core/js/init.js"></script>
+            <script src="${up}src/js/init.js"></script>
             <script src="${up}__modules__/links.js"></script>
-            <script src="${up}src/js/build.js"></script>
+            <script src="${up}src/vue/build.js"></script>
         </body>
     </html>    
 `)
