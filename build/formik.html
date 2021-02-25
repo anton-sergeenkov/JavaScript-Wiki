@@ -24,48 +24,48 @@
         <li>
             <a
                 class="menu-link"
-                id="id__Основы__📑 Информация"
-                href="#Основы__📑 Информация"
+                id="id__formik/main/info"
+                href="#formik/main/info"
             >📑 Информация</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основы__⚡️ Использование"
-                href="#Основы__⚡️ Использование"
+                id="id__formik/main/use"
+                href="#formik/main/use"
             >⚡️ Использование</a>
         </li>
     </ul><h4>🥥 Элементы</h4><ul>  
         <li>
             <a
                 class="menu-link"
-                id="id__Элементы__🔰 <u-menu-unactive>validationSchema</u-menu-unactive>"
-                href="#Элементы__🔰 <u-menu-unactive>validationSchema</u-menu-unactive>"
+                id="id__formik/elements/validation-schema"
+                href="#formik/elements/validation-schema"
             >🔰 <u-menu-unactive>validationSchema</u-menu-unactive></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Элементы__🔰 <u-menu-unactive>validate</u-menu-unactive>"
-                href="#Элементы__🔰 <u-menu-unactive>validate</u-menu-unactive>"
+                id="id__formik/elements/validate"
+                href="#formik/elements/validate"
             >🔰 <u-menu-unactive>validate</u-menu-unactive></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Элементы__🔰 <u-menu-unactive>setFieldTouched</u-menu-unactive> (событие)"
-                href="#Элементы__🔰 <u-menu-unactive>setFieldTouched</u-menu-unactive> (событие)"
+                id="id__formik/elements/set-field-touched"
+                href="#formik/elements/set-field-touched"
             >🔰 <u-menu-unactive>setFieldTouched</u-menu-unactive> (событие)</a>
         </li>
     </ul><h4>🥥 Прочее</h4><ul>  
         <li>
             <a
                 class="menu-link"
-                id="id__Прочее__Примеры"
-                href="#Прочее__Примеры"
+                id="id__formik/other/samples"
+                href="#formik/other/samples"
             >Примеры</a>
         </li>
     </ul>
@@ -82,7 +82,7 @@
                             </slot>
                         </ul>
                     </div>
-                    <div id="content"><div id="Основы__📑 Информация"><h2>formik</h2>
+                    <div id="content"><div id="formik/main/info"><h2>formik</h2>
 
 <u-link-wrapper>
 	<a href="https://jaredpalmer.com/formik/" target="_blank">Formik</a>
@@ -92,7 +92,7 @@
 <ul class="list-point">
 	<li><u>Formik</u> - библиотека построенная на принципах управляемых компонентов и управления состоянием. Полноценное решение, которое может валидировать ввод, запомнить посещённые поля формы и обработать её отправку</li>
 </ul>
-</div><div id="Основы__⚡️ Использование"><h2>Использование</h2>
+</div><div id="formik/main/use"><h2>Использование</h2>
 
 <v-pre-npm>
 npm i --save <u-code-npm>formik</u-code-npm>
@@ -142,7 +142,7 @@ export default withFormik({
     validationSchema,
 })(Component);
 </v-code>
-</div><div id="Элементы__🔰 <u-menu-unactive>validationSchema</u-menu-unactive>"><h2>validationSchema</h2>
+</div><div id="formik/elements/validation-schema"><h2>validationSchema</h2>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <h3>Заготовка</h3>
@@ -195,7 +195,7 @@ emailPersonal: Yup.string()
         excludeEmptyString: true,
     }),
 </v-code>
-</div><div id="Элементы__🔰 <u-menu-unactive>validate</u-menu-unactive>"><h2>validate</h2>
+</div><div id="formik/elements/validate"><h2>validate</h2>
 
 <v-code lang="js" title="">
 const validate = values => {
@@ -217,7 +217,7 @@ export default withFormik({
     validationSchema,
 })(Component);
 </v-code>
-</div><div id="Элементы__🔰 <u-menu-unactive>setFieldTouched</u-menu-unactive> (событие)"><h2>Событие setFieldTouched</h2>
+</div><div id="formik/elements/set-field-touched"><h2>Событие setFieldTouched</h2>
 
 <ul class="list-point">
     <li>Валидация происходит при <u>onBlur</u></li>
@@ -237,7 +237,7 @@ const SocialAnswerForm = ({ setFieldTouched }) =&gt; {
     );
 };
 </v-code>
-</div><div id="Прочее__Примеры"><h2>Примеры</h2>
+</div><div id="formik/other/samples"><h2>Примеры</h2>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <h3>Обработчик события без Formik</h3>

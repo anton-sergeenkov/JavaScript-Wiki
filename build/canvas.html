@@ -24,40 +24,40 @@
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__Информация"
-                href="#Основное__Информация"
+                id="id__canvas/main/info"
+                href="#canvas/main/info"
             >Информация</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__HTML"
-                href="#Основное__HTML"
+                id="id__canvas/main/html"
+                href="#canvas/main/html"
             >HTML</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__Основы"
-                href="#Основное__Основы"
+                id="id__canvas/main/basic"
+                href="#canvas/main/basic"
             >Основы</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__Фигуры"
-                href="#Основное__Фигуры"
+                id="id__canvas/main/figure"
+                href="#canvas/main/figure"
             >Фигуры</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__Остальное"
-                href="#Основное__Остальное"
+                id="id__canvas/main/other"
+                href="#canvas/main/other"
             >Остальное</a>
         </li>
     </ul>
@@ -74,21 +74,21 @@
                             </slot>
                         </ul>
                     </div>
-                    <div id="content"><div id="Основное__Информация"><h2>Информация</h2>
+                    <div id="content"><div id="canvas/main/info"><h2>Информация</h2>
 
 <u-link-wrapper>
 	<a href="https://www.w3schools.com/tags/ref_canvas.asp" target="_blank">https://www.w3schools.com</a>
 	<a href="https://www.pixijs.com/" target="_blank">PixiJS</a>
 	<a href="https://threejs.org/" target="_blank">three.js</a>
 </u-link-wrapper>
-</div><div id="Основное__HTML"><h2>HTML</h2>
+</div><div id="canvas/main/html"><h2>HTML</h2>
 
 <v-code lang="html" title="">
 &lt;canvas id="canvas" style="display: block; border: 2px solid black;"&gt;
 	Your browser is not supported
 &lt;/canvas&gt;
 </v-code>
-</div><div id="Основное__Основы"><h2>Основы</h2>
+</div><div id="canvas/main/basic"><h2>Основы</h2>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <h3>Выборка и получение контекста</h3>
@@ -110,7 +110,7 @@ ctx.fillStyle = 'yellowgreen';
 ctx.strokeStyle = 'black';
 ctx.lineWidth = 4;
 </v-code>
-</div><div id="Основное__Фигуры"><!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+</div><div id="canvas/main/figure"><!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <h2>Объекты</h2>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
@@ -219,7 +219,7 @@ ctx.fillText('Hello World', 20, 35);
 </template><template v-slot:last>
 <img src="/__img__/canvas/text2.png" class="img200">
 </template></v-two-fix>
-</div><div id="Основное__Остальное"><h2>Остальное</h2>
+</div><div id="canvas/main/other"><h2>Остальное</h2>
 
 <v-code lang="js" title="">
 ctx.clearRect(0, 0, canvas.width, canvas.height); // очистка холста

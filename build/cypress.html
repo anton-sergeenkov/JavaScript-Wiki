@@ -24,72 +24,72 @@
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__📑 Информация"
-                href="#Основное__📑 Информация"
+                id="id__cypress/main/info"
+                href="#cypress/main/info"
             >📑 Информация</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__🍋 Установка"
-                href="#Основное__🍋 Установка"
+                id="id__cypress/main/npm"
+                href="#cypress/main/npm"
             >🍋 Установка</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__⚡️ Структура"
-                href="#Основное__⚡️ Структура"
+                id="id__cypress/main/code"
+                href="#cypress/main/code"
             >⚡️ Структура</a>
         </li>
     </ul><h4>🥥 Методы</h4><ul>  
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>should</u-menu>"
-                href="#Методы__<u-menu>should</u-menu>"
+                id="id__cypress/methods/should"
+                href="#cypress/methods/should"
             ><u-menu>should</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>type</u-menu> <u-menu>clear</u-menu> <u-menu>blur</u-menu>"
-                href="#Методы__<u-menu>type</u-menu> <u-menu>clear</u-menu> <u-menu>blur</u-menu>"
+                id="id__cypress/methods/type"
+                href="#cypress/methods/type"
             ><u-menu>type</u-menu> <u-menu>clear</u-menu> <u-menu>blur</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>visit</u-menu> <u-menu>pause</u-menu> <u-menu>wait</u-menu>"
-                href="#Методы__<u-menu>visit</u-menu> <u-menu>pause</u-menu> <u-menu>wait</u-menu>"
+                id="id__cypress/methods/visit"
+                href="#cypress/methods/visit"
             ><u-menu>visit</u-menu> <u-menu>pause</u-menu> <u-menu>wait</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>get</u-menu>"
-                href="#Методы__<u-menu>get</u-menu>"
+                id="id__cypress/methods/get"
+                href="#cypress/methods/get"
             ><u-menu>get</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>fixture</u-menu>"
-                href="#Методы__<u-menu>fixture</u-menu>"
+                id="id__cypress/methods/fixture"
+                href="#cypress/methods/fixture"
             ><u-menu>fixture</u-menu></a>
         </li>
     </ul><h4>🥥 Guides</h4><ul>  
         <li>
             <a
                 class="menu-link"
-                id="id__Guides__⭐️ Network Requests"
-                href="#Guides__⭐️ Network Requests"
+                id="id__cypress/guides/network-requests"
+                href="#cypress/guides/network-requests"
             >⭐️ Network Requests</a>
         </li>
     </ul>
@@ -106,7 +106,7 @@
                             </slot>
                         </ul>
                     </div>
-                    <div id="content"><div id="Основное__📑 Информация"><h2>Информация</h2>
+                    <div id="content"><div id="cypress/main/info"><h2>Информация</h2>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <h3>Атотесты JavaScript</h3>
@@ -123,7 +123,7 @@
     <li><u>Cucumber</u> - BDD Testing & Collaboration Tools for Teams</li>
 </ul>
 
-</div><div id="Основное__🍋 Установка"><h2>Установка</h2>
+</div><div id="cypress/main/npm"><h2>Установка</h2>
 
 <u-link-wrapper>
 	<a href="https://docs.cypress.io/guides/getting-started/installing-cypress.html" target="_blank">Cypress Geting Started</a>
@@ -158,7 +158,7 @@ npm run <em>cypress:open</em>
 <v-code lang="js" title="Запуск напрямую">
 npx cypress <em>open</em>  // запуск тестов
 npx cypress <em>run</em>   // record screenshots, videos and failures
-</v-code></div><div id="Основное__⚡️ Структура"><h2>Структура</h2>
+</v-code></div><div id="cypress/main/code"><h2>Структура</h2>
 
 <ul class="list-point">
     <li>Собственные тесты должны находиться в <u-code-text>cypress/integration</u-code-text></li>
@@ -207,7 +207,7 @@ Cypress.Commands.add('checkTitle', (message) => {
 cy.<u-code>children</u-code>()
 cy.<u-code>and</u-code>('be.visible')
 </v-code>
-</div><div id="Методы__<u-menu>should</u-menu>"><h2>should</h2>
+</div><div id="cypress/methods/should"><h2>should</h2>
 
 <v-code lang="js" title="">
 cy.<u-code>get</u-code>('input') .<u-code>should</u-code>('<u-code-text>have.value</u-code-text>', 'Hello');               // есть атрибут value="Hello"
@@ -219,7 +219,7 @@ cy.<u-code>get</u-code>('div')   .<u-code>should</u-code>('<u-code-text>contain<
 cy.<u-code>get</u-code>('div')   .<u-code>should</u-code>('<u-code-text>not.contain</u-code-text>', 'Map');                // не содержит фразу (частичное соврадение)
 cy.<u-code>url</u-code>()        .<u-code>should</u-code>('<u-code-text>include</u-code-text>', 'index');                  // проверка url на вхождение 'index' (объект не должен быть строкой)
 </v-code>
-</div><div id="Методы__<u-menu>type</u-menu> <u-menu>clear</u-menu> <u-menu>blur</u-menu>"><h2>type</h2>
+</div><div id="cypress/methods/type"><h2>type</h2>
 
 <v-code lang="js" title="">
 cy.<u-code>get</u-code>('input').<u-code>clear</u-code>();                                              // очистить поле ввода
@@ -227,14 +227,14 @@ cy.<u-code>get</u-code>('input').<u-code>type</u-code>('Hello');                
 cy.<u-code>get</u-code>('input').<u-code>type</u-code>('Hello').<u-code>blur</u-code>();                                <span class="fix-u-code"></span>// добавить текст и убрать фокус
 cy.<u-code>get</u-code>('input').<u-code>type</u-code>('New Value').<u-code>should</u-code>('have.value', 'New Value'); <span class="fix-u-code"></span>// добавить текст проверить value
 </v-code>
-</div><div id="Методы__<u-menu>visit</u-menu> <u-menu>pause</u-menu> <u-menu>wait</u-menu>"><h2>Общие</h2>
+</div><div id="cypress/methods/visit"><h2>Общие</h2>
 
 <v-code lang="js" title="">
 cy.<u-code>visit</u-code>('http://localhost:8081/index');  // открыть url для теста
 cy.<u-code>pause</u-code>();                               // остановить выполнение и продолжить вручную
 cy.<u-code>wait</u-code>(1000);                            // задержка перед выполнением следующего действия
 </v-code>
-</div><div id="Методы__<u-menu>get</u-menu>"><h2>get</h2>
+</div><div id="cypress/methods/get"><h2>get</h2>
 
 <v-code lang="js" title="">
 cy.<u-code>get</u-code>('div');
@@ -242,7 +242,7 @@ cy.<u-code>get</u-code>('#id');
 cy.<u-code>get</u-code>('.classname');
 cy.<u-code>get</u-code>('a[href="https://yandex.ru/"][target="_blank"]');
 </v-code>
-</div><div id="Методы__<u-menu>fixture</u-menu>"><h2>fixture</h2>
+</div><div id="cypress/methods/fixture"><h2>fixture</h2>
 
 <u-link-wrapper>
 	<a href="https://docs.cypress.io/api/commands/fixture.html" target="_blank">Fixture</a>
@@ -314,7 +314,7 @@ cy.fixture('audio/sound.mp3', 'base64').then((mp3) => {
 	audio.play()
 })
 </v-code>
-</div><div id="Guides__⭐️ Network Requests"><h2>Network Requests</h2>
+</div><div id="cypress/guides/network-requests"><h2>Network Requests</h2>
 
 <u-link-wrapper>
 	<a href="https://docs.cypress.io/guides/guides/network-requests.html" target="_blank">Network Requests</a>

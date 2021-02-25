@@ -24,72 +24,72 @@
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__📑 Информация"
-                href="#Основное__📑 Информация"
+                id="id__enzyme/main/info"
+                href="#enzyme/main/info"
             >📑 Информация</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Основное__🍋 Установка"
-                href="#Основное__🍋 Установка"
+                id="id__enzyme/main/npm"
+                href="#enzyme/main/npm"
             >🍋 Установка</a>
         </li>
     </ul><h4>🥥 API</h4><ul>  
         <li>
             <a
                 class="menu-link"
-                id="id__API__🔥 Методы рендеринга"
-                href="#API__🔥 Методы рендеринга"
+                id="id__enzyme/api/methods-render"
+                href="#enzyme/api/methods-render"
             >🔥 Методы рендеринга</a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__API__🔥 Методы"
-                href="#API__🔥 Методы"
+                id="id__enzyme/api/methods"
+                href="#enzyme/api/methods"
             >🔥 Методы</a>
         </li>
     </ul><h4>🥥 Методы</h4><ul>  
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>...</u-menu>"
-                href="#Методы__<u-menu>...</u-menu>"
+                id="id__enzyme/methods/other"
+                href="#enzyme/methods/other"
             ><u-menu>...</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>state</u-menu>"
-                href="#Методы__<u-menu>state</u-menu>"
+                id="id__enzyme/methods/state"
+                href="#enzyme/methods/state"
             ><u-menu>state</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>props</u-menu>"
-                href="#Методы__<u-menu>props</u-menu>"
+                id="id__enzyme/methods/props"
+                href="#enzyme/methods/props"
             ><u-menu>props</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>simulate</u-menu>"
-                href="#Методы__<u-menu>simulate</u-menu>"
+                id="id__enzyme/methods/simulate"
+                href="#enzyme/methods/simulate"
             ><u-menu>simulate</u-menu></a>
         </li>
       
         <li>
             <a
                 class="menu-link"
-                id="id__Методы__<u-menu>debug</u-menu>"
-                href="#Методы__<u-menu>debug</u-menu>"
+                id="id__enzyme/methods/debug"
+                href="#enzyme/methods/debug"
             ><u-menu>debug</u-menu></a>
         </li>
     </ul>
@@ -106,7 +106,7 @@
                             </slot>
                         </ul>
                     </div>
-                    <div id="content"><div id="Основное__📑 Информация"><h2>Информация</h2>
+                    <div id="content"><div id="enzyme/main/info"><h2>Информация</h2>
 
 <u-link-wrapper>
 	<a href="https://enzymejs.github.io/enzyme/" target="_blank">Enzyme</a>
@@ -123,7 +123,7 @@
     <li>Манипуляции над компонентами</li>
     <li>Имитация событий</li>
 </ul>
-</div><div id="Основное__🍋 Установка"><h2>Установка</h2>
+</div><div id="enzyme/main/npm"><h2>Установка</h2>
 
 <v-pre-npm>
 npm i --save-dev <u-code-npm>jest</u-code-npm>
@@ -167,7 +167,7 @@ configure({ adapter: new Adapter() });
     }
 }
 </v-code>
-</div><div id="API__🔥 Методы рендеринга"><h2>Методы рендеринга</h2>
+</div><div id="enzyme/api/methods-render"><h2>Методы рендеринга</h2>
 
 <v-code lang="js" title="">
 import Enzyme, { shallow, render, mount } from 'enzyme';
@@ -201,7 +201,7 @@ import Enzyme, { shallow, render, mount } from 'enzyme';
     <li>Работает с DOM-нодой (результат рендера - HTML)</li>
     <li><u>Lifecycle methods</u>: render</li>
 </ul>
-</div><div id="API__🔥 Методы"><h2>Методы</h2>
+</div><div id="enzyme/api/methods"><h2>Методы</h2>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <h3>Без Enzyme</h3>
@@ -297,7 +297,7 @@ let wrapper;
     <em>expect</em>(wrapper...).toBe(...);
 });
 </v-code>
-</div><div id="Методы__<u-menu>...</u-menu>"><h2>Основные действия</h2>
+</div><div id="enzyme/methods/other"><h2>Основные действия</h2>
 
 <v-code lang="js" title="">
 import React from 'react';
@@ -343,7 +343,7 @@ it('', () =&gt; {
 expect(wrapper.find('h1').length).toBe(1);  // есть элемент
 expect(wrapper.find('h2').length).toBe(0);  // нет элемента
 </v-code>
-</div><div id="Методы__<u-menu>state</u-menu>"><h2>state</h2>
+</div><div id="enzyme/methods/state"><h2>state</h2>
 
 <v-code lang="js" title="">
 import React, { Component } from 'react';
@@ -377,7 +377,7 @@ it('', () => {
     <em>expect</em>(wrapper.<u-code>state</u-code>().name)  .<u-code>toBe</u-code>('Tony');
 });
 </v-code>
-</div><div id="Методы__<u-menu>props</u-menu>"><h2>props</h2>
+</div><div id="enzyme/methods/props"><h2>props</h2>
 
 <v-code lang="js" title="">
 import React, { Component } from 'react';
@@ -433,7 +433,7 @@ it('', () => {
     }
 });
 </v-code>
-</div><div id="Методы__<u-menu>simulate</u-menu>"><h2>simulate</h2>
+</div><div id="enzyme/methods/simulate"><h2>simulate</h2>
 
 <div class="v-method-wrapper">
     <v-method before="." method="simulate" after="" arg="(event, [...args])">
@@ -498,7 +498,7 @@ it('', () =&gt; {
 });
 </v-code>
 
-</div><div id="Методы__<u-menu>debug</u-menu>"><h2>debug</h2>
+</div><div id="enzyme/methods/debug"><h2>debug</h2>
 
 <v-code lang="js" title="">
 import React from 'react';
