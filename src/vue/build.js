@@ -1,10 +1,9 @@
 
 new Vue({
-    el: '#container',
+    el: '#menu',
     data: {
         themesContent: null,
-        linksContent: null,
-        themesEmoji: '🥥'
+        themesEmoji: '🥥',
     },
     methods: {
         buildContent(file) {
@@ -32,10 +31,21 @@ new Vue({
     },
     mounted() {
         this.themesContent = ARR_MODULE;
-        this.linksContent = ARR_LINKS;
     },
     created() {
-        const hashPage = location.hash.slice(1);
-        hashPage && this.buildContent(hashPage);
+        if (location.href.indexOf('build') === -1) {
+            const hashPage = location.hash.slice(1);
+            hashPage && this.buildContent(hashPage);
+        }
 	},
+});
+
+new Vue({
+    el: '#links',
+    data: {
+        linksContent: null,
+    },
+    mounted() {
+        this.linksContent = ARR_LINKS;
+    },
 });

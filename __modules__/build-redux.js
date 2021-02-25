@@ -22,11 +22,11 @@ ARR_MODULE = [
     {
         title: 'Методы',
         themes: [
-            // SUB-TITLE: Redux
+            // TODO SUB-TITLE: Redux
             ['redux/methods/create-store',      emoji.chevron+setTheme(4, ['createStore'])],
             ['redux/methods/apply-middleware',  emoji.chevron+setTheme(4, ['applyMiddleware'])],
             ['redux/methods/combine-reducers',  emoji.chevron+setTheme(4, ['combineReducers'])],
-            // SUB-TITLE: React-Redux
+            // TODO SUB-TITLE: React-Redux
             ['redux/methods/provider',          emoji.chevron+setTheme(4, ['Provider'])],
             ['redux/methods/connect',           emoji.chevron+setTheme(4, ['connect'])],
             ['redux/methods/hooks',             emoji.chevron+setTheme(4, ['useDispatch', 'useSelector'])],

@@ -1,5 +1,5 @@
 ARR_MODULE = [
-    // SUB-TITLE: React.js
+    // TODO SUB-TITLE: React.js
     {
         title: 'Реконсиляция',
         themes: [
@@ -67,7 +67,7 @@ ARR_MODULE = [
             ['react-js/lifecycle/hook-component-did-catch',           emoji.cookie+'componentDidCatch()'],
         ]
     },
-    // SUB-TITLE: React.js-Остальное
+    // TODO SUB-TITLE: React.js-Остальное
     {
         title: 'Прочее',
         themes: [

@@ -15,4 +15,6 @@ npm run pages  # [node.js] build pages
 ## Todo
 - Добавить SUB-TITLE
 - Переписать на Parcel
-- Верхнее меню переделать под webnotes
+- Ссылка на главную
+- Сворачивание меню
+- Подсвечивание элемента меню в BUILD
