@@ -19,6 +19,7 @@ npm run pages  # [node.js] build pages (после добавления ново
 - Сворачивание меню
 - Подсвечивание элемента меню в BUILD
 - Сохранить в LocalStorage BUILD / PAGES MODE
+- Добавить нумерацию тем
 
 ## Check
 - `<v-iframe />`          # Не рендерится контент после (только в webnotes)
