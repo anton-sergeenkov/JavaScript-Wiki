@@ -5,8 +5,8 @@ http-server  # start app
 ```
 
 ```bash
-npm run build  # [node.js] build full pages
-npm run pages  # [node.js] build pages
+npm run build  # [node.js] build full pages (после изменения темы)
+npm run pages  # [node.js] build pages (после добавления новой страницы)
 ```
 
 ## Fix
@@ -18,3 +18,4 @@ npm run pages  # [node.js] build pages
 - Ссылка на главную
 - Сворачивание меню
 - Подсвечивание элемента меню в BUILD
+- Сохранить в LocalStorage BUILD / PAGES MODE
