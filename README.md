@@ -13,8 +13,6 @@ npm run pages  # [node.js] build pages (после добавления ново
 - none
 
 ## Todo
-- Если в меню 2 строчки, то u-menu накладывается
-- Адаптивность
 - Добавить SUB-TITLE
 - Переписать на Parcel
 - Ссылка на главную
@@ -22,7 +20,6 @@ npm run pages  # [node.js] build pages (после добавления ново
 - Подсвечивание элемента меню в BUILD
 - Сохранить в LocalStorage BUILD / PAGES MODE
 - Добавить нумерацию тем
-- Подсвечивание выбранного пункта меню
 
 ## Check
 - `<v-iframe />`          # Не рендерится контент после (только в webnotes)
@@ -35,6 +32,3 @@ npm run pages  # [node.js] build pages (после добавления ново
 Отступ сверху, если не использовать TAB
 </u-code-wrapper>
 ```
-
-
-
