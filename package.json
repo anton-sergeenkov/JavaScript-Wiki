@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "build": "node -r esm ./index.js"
+        "pages": "node -r esm ./node.js/script-pages.js",
+        "build": "node -r esm ./node.js/script-build.js"
     },
     "dependencies": {
         "esm": "^3.2.25",
