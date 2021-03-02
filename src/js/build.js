@@ -1,13 +1,14 @@
 
 new Vue({
-    el: '#menu',
+    el: '#container',
     data: {
         themesContent: null,
-        themesEmoji: '🥥',
+        linksContent: null,
+        themesEmoji: '🥥'
     },
     methods: {
         buildContent(file) {
-            const path = `/@themes/${file}.html`;
+            const path = `pages/${PATH_MODULE}/${file}.html`;
 
             fetch(path)
                 .then(res => res.text())
@@ -31,21 +32,10 @@ new Vue({
     },
     mounted() {
         this.themesContent = ARR_MODULE;
-    },
-    created() {
-        if (location.href.indexOf('build') === -1) {
-            const hashPage = location.hash.slice(1);
-            hashPage && this.buildContent(hashPage);
-        }
-	},
-});
-
-new Vue({
-    el: '#links',
-    data: {
-        linksContent: null,
-    },
-    mounted() {
         this.linksContent = ARR_LINKS;
     },
+    created() {
+        const hashPage = location.hash.slice(1);
+        hashPage && this.buildContent(hashPage);
+	},
 });

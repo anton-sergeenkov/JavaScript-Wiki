@@ -1,5 +1,5 @@
 
-emoji = {
+const emoji = {
     theory:    '📑 ',
     code:      '⚡️ ',
     panda:     '🐼 ',
